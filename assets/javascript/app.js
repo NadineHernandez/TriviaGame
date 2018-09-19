@@ -1,4 +1,5 @@
-//Create game objects with answers
+$( document ).ready(function() {
+    //Create game objects with answers
 var game = {
     questionarr: [
     //question0 
@@ -178,10 +179,12 @@ var game = {
             if (currentQuestion <= 9) {
             startButton.style.display = "none";
             changingContent.style.display = "block";
+            question.style.display = "block";
             buttonBox.style.display = "block";
             feedback.style.display = "none";
             score.style.display = "none";
             picture.style.display = "none";
+            startOverButton.style.display = "none";
             timer.style.display = "block";
             //populate question and answers for first question
             game.main.makeQuestion();
@@ -212,6 +215,7 @@ var game = {
             $("#correct").text("Answers Correct: " + answersCorrect);
             $("#incorrect").text("Answers Incorrect: " + answersIncorrect);
             $("#timeup").text("Answers Timed Out: " + answersTimedout);
+            startOverButton.style.display = "block";
             buttonBox.style.display = "none";
             feedback.style.display = "none";
             question.style.display = "none";
@@ -266,4 +270,13 @@ $(".button").on("click", function() {
     }
     game.main.result();
 })
-//if timer is 0 then timeout event
+
+$("#startOver").on("click", function() {
+    currentQuestion = 0;
+    answersCorrect = 0;
+    answersIncorrect = 0;
+    answersTimedout = 0;
+    game.main.start();
+})
+
+});
