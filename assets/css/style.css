@@ -1,0 +1,76 @@
+body {
+    background-image: url("../images/map.jpg");
+    font-size: 150%;
+}
+
+#container {
+    background-color: #f0e2d1;
+    width: 50%;
+    height: 500px;
+    margin: 5% auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #604e37;
+}
+
+#title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 250%;
+    padding: 2% 0;
+}
+
+#startButton {
+    text-align: center;
+    margin: 1% auto;
+}
+
+button {
+    background-color: #fffbf5;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #604e37;
+    color: #604e37;
+    width: 40%;
+    padding: 0 2%;
+    font-size: 100%;
+}
+
+#changingContent {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#timer {
+    text-align: center;
+    margin: 1% auto;
+}
+
+#question {
+    text-align: center;
+    margin: 1% auto;
+}
+
+#feedback {
+    text-align: center;
+    margin: 1% auto;
+}
+
+#picture {
+    text-align: center;
+    margin: 1% auto;
+}
+
+img {
+    width: 40%;
+}
+
+#score {
+    text-align: center;
+    margin: 1% auto;
+}
+
+.answerDiv {
+    text-align: center;
+    margin: 1% auto;    
+}
